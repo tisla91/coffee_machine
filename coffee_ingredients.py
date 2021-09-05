@@ -1,4 +1,4 @@
-
+# Ingreients needed to make each coffee type
 MENU = {
     "espresso": {
         "ingredients": {
@@ -25,6 +25,8 @@ MENU = {
                 }
         }
 
+
+# Available starting resources
 resources = {
     "water": 300,
     "milk": 200,

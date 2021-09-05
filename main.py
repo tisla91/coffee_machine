@@ -8,12 +8,10 @@ while coffee_machine_on:
     prompt_test = CoffeeMachine(coffee_type)
     if coffee_type not in available:
         print("Please make type an available order!")
-    elif coffee_type == "off":
+    elif coffee_type == "off":           ## Switches off the coffee machine (Ends while loop)
         coffee_machine_on = False
-    elif coffee_type == "report":      ## Continuusly update resources after each coffe is made because of the while loop above.
+    elif coffee_type == "report":      ## Continuously updates resources after each coffe is made because of the while loop above.
         print(prompt_test.resources)
-    else:
+    else:                                ## Makes coffee , and process payment
         print(prompt_test.update_resources_and_make_coffee())
 
-
-print(5 -10)
